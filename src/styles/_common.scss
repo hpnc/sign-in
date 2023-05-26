@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $color--black;
+}
+
+body {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.common-input {
+  width: -webkit-fill-available;
+  border: 1px solid $color--gray;
+  padding: 8px 16px;
+  height: 30px;
+}
+
+.common-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  height: 48px;
+  width: 100%;
+  color: $color--white;
+  background: $color--black;
+  padding: 16px;
+  cursor: pointer;
+  &.disabled {
+    cursor: not-allowed;
+    background: $color--gray;
+    border: none;
+  }
+}
+
+.link {
+  color: $color--link;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.error {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  color: $color--red;
+}

@@ -1,0 +1,116 @@
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  background: $color--bg;
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 48px 96px;
+    .top {
+      display: flex;
+      align-items: center;
+      font-size: 1.75rem;
+      margin-bottom: 15%;
+      font-family: $font-aespa;
+      svg {
+        cursor: pointer;
+        margin-right: 8px;
+      }
+    }
+    .title {
+      font-family: $font-aespa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 2.25rem;
+      margin-bottom: 24px;
+    }
+    .desc {
+      font-weight: 500;
+      text-align: center;
+      color: $color--gray;
+    }
+    .label {
+      margin: 16px 0 8px;
+      font-weight: 500;
+    }
+    .remember {
+      margin: 16px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      label {
+        margin-left: 4px;
+      }
+    }
+    .google-btn {
+      border: 1px solid $color--gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+
+      background: $color--white;
+      color: $color--black;
+      svg {
+        margin-right: 8px;
+      }
+    }
+    .bottom {
+      font-size: 0.75rem;
+      text-align: center;
+      margin-top: 24px;
+    }
+  }
+  .right-content {
+    width: 60%;
+    background-image: url("../assets/images/karina.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: $color--white;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    .name {
+      font-size: 2.25rem;
+      font-family: $font-aespa;
+    }
+    .top {
+      text-align: end;
+    }
+    .bottom {
+      margin-top: auto;
+    }
+    .desc {
+      width: 65%;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main-layout {
+    .left-content {
+      width: 50%;
+      padding: 48px 24px;
+    }
+    .right {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-layout {
+    .left-content {
+      width: 100%;
+      padding: 24px;
+    }
+    .right-content {
+      display: none;
+    }
+  }
+}
